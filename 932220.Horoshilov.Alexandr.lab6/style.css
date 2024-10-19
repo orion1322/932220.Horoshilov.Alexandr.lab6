@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --left-width: 50%;
+    --right-width: 50%;
+}
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    flex-grow: 1;
+    font-size: 16pt;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+.content {
+    display: flex;
+    overflow: hidden;
+}
+
+.content-column {
+    height: 400px;
+    padding: 30px;
+    transition: 0.3s ease;
+}
+
+.content-column img {
+    width: 100%;
+    height: 300px;
+    transition: 0.2s ease;
+}
+
+.cat {
+    width: var(--left-width);
+    background-color: blue;
+}
+
+.dog {
+    width: var(--right-width);
+    background-color: green;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
